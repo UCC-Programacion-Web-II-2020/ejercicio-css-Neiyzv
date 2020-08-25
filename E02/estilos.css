@@ -10,8 +10,14 @@ img{ border:0; }
 /*Texto alineado al centro*/
 .center{ text-align:center; }
 
-h1{	font-size: 2.0em; }
-h2{	font-size: 1.5em; }
+h1{
+	font-size: 2.0em;
+	text-align: center;
+}
+h2{
+	font-size: 1.5em;
+	text-decoration: underline;
+}
 
 
 /*Contenedor principal*/
@@ -19,6 +25,7 @@ h2{	font-size: 1.5em; }
 	margin: 0 auto;
 	max-width: 1024px;
 	border: 1px solid #000;
+	font-family: 'Oswald', serif;
 }
 /*********************************/
 /*Encabezado*/
@@ -26,18 +33,23 @@ h2{	font-size: 1.5em; }
 /*Color en degradado creado en http://www.colorzilla.com/gradient-editor/ */
 	padding: 20px;
 	height:60px;
+	background-color: #46C7C7;
 }
 
 #header h1 { 
 	margin: 0;
-	font-weight:300;	  
+	font-weight:300;
+	color: white;
+	text-shadow: 3px 3px gray;
+
 }
 /*********************************/
 /*Menú*/
 #navigation {
 	float: left;
 	width: 100%;
-	border:1px solid #000
+	border:1px solid #000;
+	background-color: whitesmoke;
 }
 
 #navigation ul {	
@@ -55,20 +67,39 @@ h2{	font-size: 1.5em; }
 	text-decoration: none;	
 }
 
-#navigation li a:hover { background:#FF0000; }
+#navigation li a:hover { background: #E5E4E2; }
 /*********************************/
 /*Contenido*/
 #content {
 	clear: left;
 	padding: 20px;
+	background-color: #F0F8FF;
 }
 
-#content a { 
-	/* Color de los hipervinculos*/
+#content table{
+	text-align: center;
+	border-collapse: collapse;
+	margin: 35%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	background-color: whitesmoke;
 }
 
-#content h1 {		
-	padding-bottom: 10px;	
+#content table th, td {
+	border: 0.5px solid black;
+	padding: 5px 5px;
+}
+
+fieldset {
+	background-color: whitesmoke;
+}
+
+legend {
+	text-align: center;
+	background-color: #8EEBCE;
+	color: black;
+	border-style: outset;
+	padding: 5px 10px;
 }
 
 #content h1, #content h2 {
@@ -81,6 +112,8 @@ h2{	font-size: 1.5em; }
 	padding: 15px;
 	height: 150px;
 	border: 1px solid #000;
+	background-color: #8EEBCE;
+
 }
 
 #footer p { float:right; }
@@ -92,11 +125,13 @@ h2{	font-size: 1.5em; }
 	list-style-type: none;
 	text-align:left;
 	margin: 0 0 10px 0;		
-	padding:0;	
+	padding:0;
+
 }
 
 #footer ul li a {
-	text-decoration:none;
+	text-decoration:underline;
+	color: black;
 }
 
 #footer ul li a:hover {	text-decoration:underline; }
@@ -128,7 +163,7 @@ h2{	font-size: 1.5em; }
 
 label.chk input {
 	display:inline;
-	border:0px;	
+	border:0;
 }
 
 #vertical label{
